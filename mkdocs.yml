@@ -3,8 +3,8 @@ site_url: https://stuzero.github.io/pg-mcp/
 site_description: A Model Context Protocol Server for PostgreSQL databases
 site_author: stuzero
 
-repo_name: stuzero/pg-mcp
-repo_url: https://github.com/stuzero/pg-mcp
+repo_name: stuzero/pg-mcp-server
+repo_url: https://github.com/stuzero/pg-mcp-server
 
 markdown_extensions:
   - pymdownx.superfences:
