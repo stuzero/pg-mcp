@@ -1,0 +1,36 @@
+site_name: pg-mcp
+site_url: https://stuzero.github.io/pg-mcp/
+site_description: A Model Context Protocol Server for PostgreSQL databases
+site_author: stuzero
+
+repo_name: stuzero/pg-mcp
+repo_url: https://github.com/stuzero/pg-mcp
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+theme:
+  name: material
+  palette:
+    scheme: default
+    toggle:
+      - icon: material/toggle-switch
+        name: Switch to dark mode
+      - icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  features:
+    - navigation.tabs.sticky
+    - navigation.tabs.chip
+    - navigation.tabs.stretch
+    - navigation.instant
+    - navigation.expandable
+    - navigation.top
+    - navigation.sections
+    - navigation.tracking.scroll
+    - navigation.tracking.click
+    - navigation.tracking.scrollbar
+    - navigation.tracking.clickable
+    - navigation.tracking.clickable.scroll
