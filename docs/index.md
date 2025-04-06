@@ -1,25 +1,25 @@
 # Introduction
 
-**pg-mcp** is a multi-tenant [Model Context Protocol](https://modelcontextprotocol.io/) server which bridges the connection between LLM Agents and PostgreSQL databases. Built with FastMCP, the official [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk), and [AsyncPG](https://github.com/MagicStack/asyncpg), the MCP server runs in "server-mode", communicating with agents via HTTP Server Side Events (SSE) and accepting PostgreSQL connection strings while providing read-only query access to connected databases.
+**pg-mcp-server** is a multi-tenant [Model Context Protocol](https://modelcontextprotocol.io/) server which bridges the connection between LLM Agents and PostgreSQL databases. Built with FastMCP, the official [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk), and [AsyncPG](https://github.com/MagicStack/asyncpg), the MCP server runs in "server-mode", communicating with agents via HTTP Server Side Events (SSE) and accepting PostgreSQL connection strings while providing read-only query access to connected databases.
 
 ## Concepts
 
-**pg-mcp** allows you to bring your own language models in order to interact with your PostgreSQL databases:
+**pg-mcp-server** allows you to bring your own language models in order to interact with your PostgreSQL databases:
 
 ```mermaid
 graph TD
     classDef mcpcolor fill:#a7f3d0,stroke:#0478573
     UI <--> Agents["Agent(s)"]
-    Agents <--_HTTP/SSE_--> MCP["**pg-mcp**"]:::mcpcolor
+    Agents <--_HTTP/SSE_--> MCP["**pg-mcp-server**"]:::mcpcolor
     MCP <--_HTTP/TLS_--> Resources["PostgreSQL Databases"]
     Agents <--> LLM["LLM(s)"]
 ```
 
 ## How it Works
 
-MCP Servers provide additional tools and resources available to agents in order to enhance their capabilities. When supplied with a valid PostgreSQL database connection string, **pg-mcp** exposes enriched database schema information to agents, providing them with context about the structure and purpose of the database. 
+MCP Servers provide additional tools and resources available to agents in order to enhance their capabilities. When supplied with a valid PostgreSQL database connection string, **pg-mcp-server** exposes enriched database schema information to agents, providing them with context about the structure and purpose of the database. 
 
-Agents can take advantage of a well-documented database as **pg-mcp** will provide table and column comments/descriptions alongside the schema. This facilitates better understanding of user prompts from the standpoint of the database's business domain.
+Agents can take advantage of a well-documented database as **pg-mcp-server** will provide table and column comments/descriptions alongside the schema. This facilitates better understanding of user prompts from the standpoint of the database's business domain.
 
 ## Key Features
 
