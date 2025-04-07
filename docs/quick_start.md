@@ -25,12 +25,11 @@ docker-compose up -d
 git clone https://github.com/stuzero/pg-mcp-server.git
 cd pg-mcp-server
 
-# Create and activate a virtual environment
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+# Install dependencies and create a virtual environment ( .venv )
+uv sync
 
-# Install using uv
-uv sync --frozen
+# Activate the virtual environment
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Run the server
 python -m server.app
@@ -45,7 +44,7 @@ The repository includes test scripts to verify server functionality:
 python test.py "postgresql://username:password@hostname:port/database"
 
 # Claude-powered natural language to SQL conversion
-python client/claude_cli.py "Show me the top 5 customers by total sales"
+python example-clients/claude_cli.py "Show me the top 5 customers by total sales"
 ```
 
 The `claude_cli.py` script requires environment variables:
