@@ -1,51 +1,35 @@
 # Introduction
 
-**pg-mcp-server** is a multi-tenant [Model Context Protocol](https://modelcontextprotocol.io/) server which bridges the connection between LLM Agents and PostgreSQL databases. Built with FastMCP, the official [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk), and [AsyncPG](https://github.com/MagicStack/asyncpg), the MCP server runs in "server-mode", communicating with agents via HTTP Server Side Events (SSE) and accepting PostgreSQL connection strings while providing read-only query access to connected databases.
+## Model Context Protocol for PostgreSQL
 
-## Concepts
+**pg-mcp** is an ecosystem for connecting LLMs (Large Language Models) with PostgreSQL databases, enabling natural language queries through a standardized protocol.
 
-**pg-mcp-server** allows you to bring your own language models in order to interact with your PostgreSQL databases:
 
-```mermaid
-graph TD
-    classDef mcpcolor fill:#a7f3d0,stroke:#0478573
-    UI <--> Agents["Agent(s)"]
-    Agents <--_HTTP/SSE_--> MCP["**pg-mcp-server**"]:::mcpcolor
-    MCP <--_HTTP/TLS_--> Resources["PostgreSQL Databases"]
-    Agents <--> LLM["LLM(s)"]
-```
+## Overview
 
-## How it Works
+The pg-mcp project consists of two main components:
 
-MCP Servers provide additional tools and resources available to agents in order to enhance their capabilities. When supplied with a valid PostgreSQL database connection string, **pg-mcp-server** exposes enriched database schema information to agents, providing them with context about the structure and purpose of the database. 
+1. **pg-mcp-server**: A server component that provides a standardized API for querying PostgreSQL databases through the Model Context Protocol (MCP).
 
-Agents can take advantage of a well-documented database as **pg-mcp-server** will provide table and column comments/descriptions alongside the schema. This facilitates better understanding of user prompts from the standpoint of the database's business domain.
+2. **pg-mcp-client**: A web-based client application that allows users to bring their own LLM API key and query PostgreSQL databases using natural language through an intuitive UI.
 
-## Key Features
+_**The key benefit of this setup is that you never send your data to the LLM.**_
 
-- **Multi-Database Support**: Connect to multiple PostgreSQL databases simultaneously
-- **Rich Catalog Information**: Extract and expose table/column descriptions from the database catalog
-- **Extension Context**: Detailed knowledge about PostgreSQL extensions like PostGIS and pgvector
-- **Query Explanation**: Dedicated tool for analyzing query execution plans
-- **Secure Connection Management**: Proper lifecycle for database connections with secure connection ID handling
-- **Natural Language to SQL**: Built-in prompt to convert natural language to SQL queries
+## Screenshots
+![PG-MCP-Client Screenshot](pg-mcp-client.png)
 
-## Tools and Resources
 
-### Tools
-- `connect` - creates the connection from the connection string and returns a UUID `conn_id`
-- `disconnect` - closes the database connection associated with the `conn_id`
-- `pg_query` - executes a read-only SQL query
-- `pg_explain` - provides the query execution plan for a query
+## Features
 
-### Resource Templates
-Resource templates mirror the hierarchical object structure of PostgreSQL databases, and present them in a RESTful resource manner as URIs:
+- **Natural Language Querying**: Ask questions about your data in plain English
+- **Multiple LLM Support**: Works with Anthropic (Claude), Google (Gemini), and OpenAI (_untested_) models
+- **Interactive Web UI**: Clean, responsive interface built with modern web technologies
+- **Standardized Protocol**: Built on the Model Context Protocol for AI systems
+- **Database Schema Awareness**: Automatically analyzes database structure for accurate SQL generation
 
-- `pgmcp://{conn_id}/` - Comprehensive database information
-- `pgmcp://{conn_id}/schemas` - List all schemas
-- `pgmcp://{conn_id}/schemas/{schema}/tables` - List tables in a schema
-- `pgmcp://{conn_id}/schemas/{schema}/tables/{table}/columns` - Get columns for a table
-- `pgmcp://{conn_id}/schemas/{schema}/extensions` - List extensions in a schema
+## Getting Started
 
-### Prompts
-- `nl_to_sql` - Convert natural language questions to SQL queries
+If you're new to pg-mcp, check out the quickstart guides:
+
+- [Server Quickstart](./quickstart/server.md)
+- [Client Quickstart](./quickstart/client.md)

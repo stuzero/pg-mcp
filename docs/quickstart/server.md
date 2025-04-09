@@ -1,4 +1,4 @@
-# Quick Start
+# pg-mcp-server
 
 ## Installation
 
@@ -54,6 +54,22 @@ The `claude_cli.py` script requires environment variables:
 DATABASE_URL=postgresql://username:password@hostname:port/database
 ANTHROPIC_API_KEY=your-anthropic-api-key
 PG_MCP_URL=http://localhost:8000/sse
+```
+
+## Using with Claude Desktop
+Add the following to your `claude_desktop_config.json` file
+```json
+{
+  "mcpServers": {
+    "pg-mcp-server": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "http://localhost:8000/sse"
+      ]
+    }
+  }
+}
 ```
 
 ## Using with AI Agents
