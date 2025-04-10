@@ -10,4 +10,4 @@ If you're looking for the source code for `pg-mcp-server`, it's been moved to:
 
 `pg-mcp-client` can be found here:
 
-🔗 **https://github.com/stuzero/pg-mcp-server**
+🔗 **https://github.com/stuzero/pg-mcp-client**
