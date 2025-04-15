@@ -12,22 +12,28 @@
         <meta name="author" content="stuzero">
       
       
+        <link rel="canonical" href="https://stuzero.github.io/pg-mcp/overview/">
       
       
+        <link rel="prev" href="..">
       
-      <link rel="icon" href="/pg-mcp/assets/images/favicon.png">
+      
+        <link rel="next" href="../quickstart/client/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>pg-mcp</title>
+        <title>Overview - pg-mcp</title>
       
     
     
-      <link rel="stylesheet" href="/pg-mcp/assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="/pg-mcp/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("/pg-mcp/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +92,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/pg-mcp/." title="pg-mcp" class="md-header__button md-logo" aria-label="pg-mcp" data-md-component="logo">
+    <a href=".." title="pg-mcp" class="md-header__button md-logo" aria-label="pg-mcp" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -101,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Overview
             
           </span>
         </div>
@@ -191,7 +202,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/pg-mcp/." title="pg-mcp" class="md-nav__button md-logo" aria-label="pg-mcp" data-md-component="logo">
+    <a href=".." title="pg-mcp" class="md-nav__button md-logo" aria-label="pg-mcp" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -221,7 +232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pg-mcp/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -240,10 +251,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/pg-mcp/overview/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -254,6 +287,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-and-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools and Resources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tools and Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resource Templates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -308,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pg-mcp/quickstart/client/" class="md-nav__link">
+      <a href="../quickstart/client/" class="md-nav__link">
         
   
   
@@ -331,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pg-mcp/quickstart/server/" class="md-nav__link">
+      <a href="../quickstart/server/" class="md-nav__link">
         
   
   
@@ -371,6 +493,85 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-and-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools and Resources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tools and Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resource Templates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -382,8 +583,83 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="overview">Overview</h1>
+<p><strong>pg-mcp-server</strong> is a multi-tenant <a href="https://modelcontextprotocol.io/">Model Context Protocol</a> server which bridges the connection between LLM Agents and PostgreSQL databases. Built with FastMCP, the official <a href="https://github.com/modelcontextprotocol/python-sdk">MCP Python SDK</a>, and <a href="https://github.com/MagicStack/asyncpg">AsyncPG</a>, the MCP server runs in "server-mode", communicating with agents via HTTP Server Side Events (SSE) and accepting PostgreSQL connection strings while providing read-only query access to connected databases.</p>
+<p><strong>pg-mcp-client</strong> is full web application which encompasses both the UI and an agent which can communicate with the LLM of your choice via API </p>
+<h2 id="system-architecture">System Architecture</h2>
+<pre class="mermaid"><code>graph TD
+    classDef clientColor fill:#a7f3d0,stroke:#0478573
+    classDef serverColor fill:#ddd6fe
+    UI &lt;--&gt; Agents["pg-mcp-agent"]
+    Agents &lt;--_HTTP/SSE_--&gt; MCP["**pg-mcp-server**"]
+    MCP &lt;--_TCP/IP_--&gt; DB[(PostgreSQL Databases)]
+    Agents &lt;-- _REST API_ --&gt; LLM["LLM"]
+
+    subgraph Client["**pg-mcp-client**"]
+        UI
+        Agents
+    end
+
+    class Client clientColor
+    class MCP serverColor</code></pre>
+<p>In this architecture:
+- <strong>pg-mcp-client</strong> provides a user interface and agent integration
+- <strong>pg-mcp-server</strong> connects to your PostgreSQL databases
+- <strong>LLM providers</strong> (Anthropic, OpenAI, Google) translate natural language to SQL</p>
+<h2 id="how-it-works">How it Works</h2>
+<p>MCP Servers provide additional tools and resources available to agents in order to enhance their capabilities. When supplied with a valid PostgreSQL database connection string, <strong>pg-mcp-server</strong> exposes enriched database schema information to agents, providing them with context about the structure and purpose of the database. </p>
+<p>Agents can take advantage of a well-documented database as <strong>pg-mcp-server</strong> will provide table and column comments/descriptions alongside the schema. This facilitates better understanding of user prompts from the standpoint of the database's business domain.</p>
+<p><strong>pg-mcp-client</strong> stores API Keys and connection strings in the user's browser</p>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li><strong>Multi-Database Support</strong>: Connect to multiple PostgreSQL databases simultaneously</li>
+<li><strong>Rich Catalog Information</strong>: Extract and expose table/column descriptions from the database catalog</li>
+<li><strong>Extension Context</strong>: Detailed knowledge about PostgreSQL extensions like PostGIS and pgvector</li>
+<li><strong>Query Explanation</strong>: Dedicated tool for analyzing query execution plans</li>
+<li><strong>Secure Connection Management</strong>: Proper lifecycle for database connections with secure connection ID handling</li>
+<li><strong>Natural Language to SQL</strong>: Built-in prompt to convert natural language to SQL queries</li>
+</ul>
+<h2 id="tools-and-resources">Tools and Resources</h2>
+<h3 id="tools">Tools</h3>
+<ul>
+<li><code>connect</code> - creates the connection from the connection string and returns a UUID <code>conn_id</code></li>
+<li><code>disconnect</code> - closes the database connection associated with the <code>conn_id</code></li>
+<li><code>pg_query</code> - executes a read-only SQL query</li>
+<li><code>pg_explain</code> - provides the query execution plan for a query</li>
+</ul>
+<h3 id="resource-templates">Resource Templates</h3>
+<p>Resource templates mirror the hierarchical object structure of PostgreSQL databases, and present them in a RESTful resource manner as URIs:</p>
+<ul>
+<li><code>pgmcp://{conn_id}/</code> - Comprehensive database information</li>
+<li><code>pgmcp://{conn_id}/schemas</code> - List all schemas</li>
+<li><code>pgmcp://{conn_id}/schemas/{schema}/tables</code> - List tables in a schema</li>
+<li><code>pgmcp://{conn_id}/schemas/{schema}/tables/{table}/columns</code> - Get columns for a table</li>
+<li><code>pgmcp://{conn_id}/schemas/{schema}/extensions</code> - List extensions in a schema</li>
+</ul>
+<h3 id="prompts">Prompts</h3>
+<ul>
+<li><code>nl_to_sql</code> - Convert natural language questions to SQL queries</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -425,10 +701,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/pg-mcp/", "features": ["navigation.tabs.sticky", "navigation.tabs.chip", "navigation.tabs.stretch", "navigation.instant", "navigation.expandable", "navigation.top", "navigation.sections", "navigation.tracking.scroll", "navigation.tracking.click", "navigation.tracking.scrollbar", "navigation.tracking.clickable", "navigation.tracking.clickable.scroll"], "search": "/pg-mcp/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs.sticky", "navigation.tabs.chip", "navigation.tabs.stretch", "navigation.instant", "navigation.expandable", "navigation.top", "navigation.sections", "navigation.tracking.scroll", "navigation.tracking.click", "navigation.tracking.scrollbar", "navigation.tracking.clickable", "navigation.tracking.clickable.scroll"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/pg-mcp/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
